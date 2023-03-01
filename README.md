@@ -115,10 +115,11 @@ def launch_tor_process():
 
 
 if __name__ == '__main__':
-
+    # Launch a Tor process
     launch_tor_process()
     app = QApplication(sys.argv)
-
+    
+    # Proxy all browser requests through the Tor process
     PROXY_PORT = 9050
     PROXY_HOST = "127.0.0.1"
     proxy = QNetworkProxy()
@@ -126,7 +127,8 @@ if __name__ == '__main__':
     proxy.setHostName(PROXY_HOST)
     proxy.setPort(PROXY_PORT)
     QNetworkProxy.setApplicationProxy(proxy)
-
+    
+    # Add a request interceptor so we can read all the requests from the browser
     interceptor = RequestInterceptor()
 
     mainWin = MainWindow()
@@ -134,6 +136,8 @@ if __name__ == '__main__':
     availableGeometry = mainWin.screen().availableGeometry()
     mainWin.resize(availableGeometry.width() * 2 / 3,
                    availableGeometry.height() * 2 / 3)
+    
+    # Launch the web browser
     mainWin.show()
     sys.exit(app.exec())
 ```
