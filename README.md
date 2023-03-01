@@ -1,6 +1,8 @@
 I made a privacy focused, Chromium web browser to intercept all requests on a website while web scraping. I built it using Tor and PySide6 (a QT framework for Python).
 
 
+[![A simple Tor, Chrome browser built with Python](http://img.youtube.com/vi/auKpNM1g5aw/0.jpg)](http://www.youtube.com/watch?v=auKpNM1g5aw "A simple Tor, Chrome browser built with Python")
+
 
 # Backstory
 
