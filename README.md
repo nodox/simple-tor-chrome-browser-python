@@ -1,5 +1,13 @@
 I made a privacy focused, Chromium web browser to intercept all requests on a website while web scraping. I built it using Tor and PySide6 (a QT framework for Python).
 
+# Backstory
+
+I've spent the last 5 month (Oct 2022 to Feb 2023) on a web scraping deep dive. I got to the point where I can scrape many of the public websites (not including the social media giants) using Selenium and Headless Chrome.
+
+One thing I wanted more control over were the network requests. I wanted to see if there was a lightweight way to block requests from reaching the server from the browser. I spent the next few days diving deep into the chromium, and servo project source code to understand how web browsers work.
+
+To my surprise I found there is a rather simple way to do this via Python. The next step is to turn this into a lightweight headless browser to do some distributed web scraping.
+
 ## Code Snippet
 
 ```python
@@ -125,14 +133,6 @@ if __name__ == '__main__':
     mainWin.show()
     sys.exit(app.exec())
 ```
-
-# Backstory
-
-I've spent the last 5 month (Oct 2022 to Feb 2023) on a web scraping deep dive. I got to the point where I can scrape many of the public websites (not including the social media giants) using Selenium and Headless Chrome.
-
-One thing I wanted more control over were the network requests. I wanted to see if there was a lightweight way to block requests from reaching the server from the browser. I spent the next few days diving deep into the chromium, and servo project source code to understand how web browsers work.
-
-To my surprise I found there is a rather simple way to do this via Python. The next step is to turn this into a lightweight headless browser to do some distributed web scraping.
 
 # About Me
 
