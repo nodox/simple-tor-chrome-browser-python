@@ -1,5 +1,7 @@
 I made a privacy focused, Chromium web browser to intercept all requests on a website while web scraping. I built it using Tor and PySide6 (a QT framework for Python).
 
+
+
 # Backstory
 
 I've spent the last 5 month (Oct 2022 to Feb 2023) on a web scraping deep dive. I got to the point where I can scrape many of the public websites (not including the social media giants) using Selenium and Headless Chrome.
