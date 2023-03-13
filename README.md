@@ -158,4 +158,5 @@ I'm creating a web scraping course to so you don't have to spend months learning
 - build your own web scraping framework
 - build scalable infrastructure for scraping
 
-[Join the prelaunch to gain access before it becomes a full price course.](https://stevennatera.gumroad.com/l/isfsd)
+
+[Join the prelaunch to gain free access before it becomes a paid course.](https://stevennatera.gumroad.com/l/isfsd)
